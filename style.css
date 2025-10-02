@@ -565,7 +565,7 @@ main {
     
     /* Skills Section on Mobile */
     .skills-container-grid {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr;  
     }
 }
 
@@ -638,7 +638,7 @@ main {
     margin-bottom: 1.5rem;
 }
 
-/* Tech stack pills */
+ 
 .project-tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -675,6 +675,97 @@ main {
 }
 
 .project-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+/* --- CERTIFICATE SECTION --- */
+.certificate-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* Grid container for the projects */
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Min size adjusted */
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 4rem auto 0;
+    text-align: left;
+}
+
+/* Individual project card styling */
+.certificate-card {
+    background-color: var(--secondary-background);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+/* Container for the project image to simulate a frame */
+.certificate-image-container {
+    background-color: #1a1a2e; /* Darker background to frame the image */
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.certificate-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Content area of the card */
+.certificate-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.certificate-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.certificate-description {
+    color: var(--text-muted-color);
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+.certificate-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.certificate-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 8px 18px;
+    border: 1px solid var(--text-muted-color);
+    border-radius: 50px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.-btn:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: #fff;
