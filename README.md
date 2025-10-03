@@ -32,7 +32,7 @@ HTML5 – Page structure
 
 CSS3 – Styling and layout
 
-Javascript - Mobile Toggle
+Javascript - Mobile Toggle, contact me
 
 Netlify – Deployment/hosting
 

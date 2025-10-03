@@ -775,7 +775,7 @@ main {
 
 .contact-section {
     padding: 4rem 2rem;
-    text-align: center; /* Centers the subtitle and form container */
+    text-align: center; 
 }
 
 .contact-form-container {
@@ -785,7 +785,7 @@ main {
     padding: 2rem;
     border: 1px solid var(--primary-color); 
     border-radius: 12px;
-    text-align: left; /* Keep form elements left-aligned inside the container */
+    text-align: left;  
 }
 
 .contact-form-container h3 {
@@ -866,14 +866,22 @@ main {
     outline: none;
     border-color: var(--primary-color);
 }
- .confirmation-message {
+  .confirmation-message {
+    /* Existing Styles */
     text-align: center;
     color: var(--primary-color);
     font-size: 1.2rem;
     margin-top: 15px;
     margin-bottom: -15px;
     display: none;  
-}
+    
+  background-color: rgba(60, 179, 113, 0.1); 
+    border: 2px solid var(--primary-color); 
+    border-radius: 8px;
+    padding: 20px;
+    font-weight: 500;
+}  
+
    
 .btn-send {
     width: 100%;
