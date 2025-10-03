@@ -493,19 +493,19 @@ intelligence, decision-making, and operational efficiency.
      
 </section>
 
-            <section id="contact" class="contact-section">
+        <section id="contact" class="contact-section">
     <h2 class="section-title">CONTACT</h2>
     <p class="section-subtitle">
         I'd love to hear from you—reach out for any opportunities or questions!
     </p>
-    
+
     <p id="form-confirm" class="confirmation-message">
         Message sent successfully! Thanks for reaching out.
     </p>
-    
+
     <div class="contact-form-container">
         <h3>Connect With Me </h3>
-        
+
         <form name="contact" id="contactForm" method="POST" data-netlify="true">
             <div class="input-wrapper">
                 <i class="fas fa-user"></i>
@@ -530,13 +530,23 @@ intelligence, decision-making, and operational efficiency.
                 <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
             </div>
 
+            <input type="hidden" name="form-name" value="contact" />
+            
             <button type="submit" class="btn-send">Message Me</button>
         </form>
     </div>
 </section>
 
+<form name="contact" data-netlify="true" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="subject" />
+    <textarea name="message"></textarea>
+</form>
+
 <script src="script.js"></script>
-        
+  
+        </section>
     </main>
 
     <footer>
@@ -548,7 +558,8 @@ intelligence, decision-making, and operational efficiency.
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
-                 <li><a href="#Certificates">Certificates</a></li>
+                 <li><a href="#certificates">Certificates</a></li>
+
             </ul>
             <div class="footer-socials">
                 <a href="https://github.com/Rajyas07" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -565,7 +576,7 @@ intelligence, decision-making, and operational efficiency.
         // Typed.js initialization
         var typed = new Typed(".typing", {
             strings: ["Data Analyst", "Python Developer", "SQL Developer", " Power BI Developer"],
-            typeSpeed: 50,
+            typeSpeed: 100,
             backSpeed: 60,
             loop: true,
         });

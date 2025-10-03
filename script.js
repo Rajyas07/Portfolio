@@ -11,8 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         
         const formData = new FormData(contactForm);
-        
-        formData.append("form-name", "contact"); 
+    
 
     
         fetch("/", {
